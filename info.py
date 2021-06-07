@@ -31,7 +31,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 START_MSG = """
-**Hi {username}👋
+**Hi {first_name}👋
 
 I'm Leo Media Search Bot 🇱🇰**
 
