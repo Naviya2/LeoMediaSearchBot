@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 async def start(bot, message):
     """Start command handler"""
     if len(message.command) > 1 and message.command[1] == 'subscribe':
+        user = message.from_user
         await message.reply(INVITE_MSG.format(username=message.from_user.username))
     else:
         buttons = [[
