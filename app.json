@@ -1,6 +1,7 @@
 {
-    "name": "Media Search bot",
+    "name": "Leo Media Search Bot",
     "description": "When you going to send file on telegram channel/group this bot will save that in database, So you can search that easily in inline mode",
+    "logo": "https://telegra.ph/file/c705fac44db2b8d7f47e7.jpg",
     "keywords": [
       "telegram",
       "best",
@@ -12,8 +13,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Mahesh0253/Media-Search-bot",
-    "repository": "https://github.com/Mahesh0253/Media-Search-bot",
+    "website": "https://github.com/Naviya2/LeoMediaSearchBot",
+    "repository": "https://github.com/Naviya2/LeoMediaSearchBot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -65,7 +66,7 @@
             "value": ""
         },
         "DATABASE_NAME": {
-            "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "description": "Name of the database in mongoDB."
             "value": ""
         },
         "COLLECTION_NAME": {
