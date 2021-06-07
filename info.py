@@ -65,4 +65,4 @@ Support Group : @leosupportx 🇱🇰
 Updates Channel: @new_ehi 🇱🇰
 Developper : @naviya2 🇱🇰
 """
-INVITE_MSG = environ.get('INVITE_MSG', 'You cant use this bot untill you join our bot🙁 So please join our Updates Channel 🇱🇰')
+INVITE_MSG = environ.get('INVITE_MSG', 'Please join @.... to use this bot')
