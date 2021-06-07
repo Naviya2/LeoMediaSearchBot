@@ -5,7 +5,7 @@
     "keywords": [
       "telegram",
       "best",
-      "indian",
+      "srilankan",
       "pyrogram",
       "media",
       "search",
@@ -66,7 +66,7 @@
             "value": ""
         },
         "DATABASE_NAME": {
-            "description": "Name of the database in mongoDB."
+            "description": "Name of the database in mongoDB.",
             "value": ""
         },
         "COLLECTION_NAME": {
