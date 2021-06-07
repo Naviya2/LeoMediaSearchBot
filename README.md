@@ -4,6 +4,10 @@
 * When you post file on telegram channel or group this bot will save that file in database, so you can search easily in inline mode.
 * Supports document, video and audio file formats with caption support.
 
+<p align="center">
+  <img src="https://telegra.ph/file/c705fac44db2b8d7f47e7.jpg"></p>
+
+
 ## Installation
 
 ### Easy Way
