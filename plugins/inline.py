@@ -19,8 +19,8 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='You have to subscribe channel',
-                           switch_pm_parameter="subscribe")
+                           switch_pm_text='Please Subscribe Our Updates Channel and Start Searching🙂',
+                           switch_pm_parameter="Subscribe Now")
         return
 
     results = []
@@ -49,7 +49,7 @@ async def answer(bot, query):
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Results"
+        switch_pm_text = f"{emoji.FILE_FOLDER} Latest Updates"
         if string:
             switch_pm_text += f" for {string}"
 
@@ -60,7 +60,7 @@ async def answer(bot, query):
                            next_offset=str(next_offset))
     else:
 
-        switch_pm_text = f'{emoji.CROSS_MARK} No results'
+        switch_pm_text = f'{emoji.CROSS_MARK} No results found in Leo Media Search Bot 🙁'
         if string:
             switch_pm_text += f' for "{string}"'
 
@@ -74,7 +74,7 @@ def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [[
         InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-        InlineKeyboardButton('Share bot', url=url),
+        InlineKeyboardButton('Share our bot', url=url),
     ]]
     return InlineKeyboardMarkup(buttons)
 
