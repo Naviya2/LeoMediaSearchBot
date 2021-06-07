@@ -65,7 +65,7 @@ async def answer(bot, query):
             switch_pm_text += f' for "{string}"'
 
         await query.answer(results=[],
-                           cache_time=cache_time,
+                           cache_time=CACHE_TIME,
                            switch_pm_text=switch_pm_text,
                            switch_pm_parameter="okay")
 
