@@ -49,7 +49,7 @@ async def answer(bot, query):
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Latest Updates"
+        switch_pm_text = f"{emoji.FILE_FOLDER} Latest Updates 🔄👇"
         if string:
             switch_pm_text += f" for {string}"
 
@@ -73,8 +73,8 @@ async def answer(bot, query):
 def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [[
-        InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-        InlineKeyboardButton('Share our bot', url=url),
+        InlineKeyboardButton('Search Again🔄', switch_inline_query_current_chat=query),
+        InlineKeyboardButton('Share Our Bot✅', url=url),
     ]]
     return InlineKeyboardMarkup(buttons)
 
