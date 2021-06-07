@@ -24,10 +24,21 @@ COLLECTION_NAME = 'channel_files'  # If you are using the same database, then us
 
 # Messages
 START_MSG = """
-**Hi, I'm Media Search bot**
+**Hi, I'm Leo Media Search Bot 🇱🇰**
 
-Here you can search files in inline mode. Just press follwing buttons and start searching.
+Here you can find,
+
+⭕️Musical Shows
+⭕️Songs (English'Sinhala)
+⭕️Wallpapers(4K)
+⭕️Anime Films(English)
+⭕️EDM Songs
+⭕️Mod Apps
+
+Support Group : @leosupportx 🇱🇰
+Updates Channel: @new_ehi 🇱🇰
+Developper : @naviya2 🇱🇰
 """
 
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
-INVITE_MSG = 'Please join @.... to use this bot'
+INVITE_MSG = 'You cant use this bot untill you join our bot🙁 So please join our Updates Channel 🇱🇰'
