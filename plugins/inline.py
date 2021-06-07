@@ -33,7 +33,7 @@ async def answer(bot, query):
         file_type = None
 
     offset = int(query.offset or 0)
-    reply_markup = get_reply_markup(bot.username, query=string)
+    reply_markup = get_reply_markup(bot.username)
     files, next_offset = await get_search_results(string,
                                                   file_type=file_type,
                                                   max_results=MAX_RESULTS,
