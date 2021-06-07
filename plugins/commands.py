@@ -12,14 +12,14 @@ logger = logging.getLogger(__name__)
 async def start(bot, message):
     """Start command handler"""
     if len(message.command) > 1 and message.command[1] == 'subscribe':
-        await message.reply(INVITE_MSG)
+        await message.reply(INVITE_MSG.format(username=message.from_user.username))
     else:
         buttons = [[
             InlineKeyboardButton('Search Here', switch_inline_query_current_chat=''),
             InlineKeyboardButton('Go Inline', switch_inline_query=''),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply(START_MSG, reply_markup=reply_markup)
+        await message.reply(START_MSG.format(username=user.username, first_name=user.first_name, last_name=user.last_name))
 
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
