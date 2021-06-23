@@ -33,7 +33,7 @@ class Bot(Client):
 
     async def stop(self, *args):
         await super().stop()
-        print("Bot stopped. Bye.")
+        print("Leo Media Search Bot is Stopped Now")
 
 
 app = Bot()
