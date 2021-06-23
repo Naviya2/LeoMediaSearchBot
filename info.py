@@ -61,6 +61,7 @@ Here you can find,
 ⭕️EDM Songs
 ⭕️Mod Apps
 
+Bot : @leoinlinesearchbot 🇱🇰
 Support Group : @leosupportx 🇱🇰
 Updates Channel: @new_ehi 🇱🇰
 Developper : @naviya2 🇱🇰
