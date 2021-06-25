@@ -19,7 +19,7 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='Please touch here to join our channel🙂',
+                           switch_pm_text='Please touch here to join our updates channel 😊',
                            switch_pm_parameter="subscribe")
         return
 
@@ -49,7 +49,7 @@ async def answer(bot, query):
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Latest Updates 🔄👇"
+        switch_pm_text = f"{emoji.FILE_FOLDER} Latest Updated Mod Apps 🔄👇"
         if string:
             switch_pm_text += f" for {string}"
 
