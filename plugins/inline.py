@@ -60,7 +60,7 @@ async def answer(bot, query):
                            next_offset=str(next_offset))
     else:
 
-        switch_pm_text = f'{emoji.CROSS_MARK} No results found in Leo Media Search Bot 🙁'
+        switch_pm_text = f'{emoji.CROSS_MARK} No Mod Apps Found in Leo Mod Apps Bot🙁'
         if string:
             switch_pm_text += f' for "{string}"'
 
@@ -73,8 +73,8 @@ async def answer(bot, query):
 def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [[
-        InlineKeyboardButton('Search Again🔄', switch_inline_query_current_chat=query),
-        InlineKeyboardButton('Share Our Bot✅', url=url),
+        InlineKeyboardButton('Search Again 🔎', switch_inline_query_current_chat=query),
+        InlineKeyboardButton('Share Our Bot ✅', url=url),
     ]]
     return InlineKeyboardMarkup(buttons)
 
