@@ -16,8 +16,10 @@ async def start(bot, message):
         await message.reply(INVITE_MSG.format(username=message.from_user.username))
     else:
         buttons = [[
+            InlineKeyboardButton('Developer 🧑‍💻', url='https://t.me/naviya2'),
+            InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
+        
             InlineKeyboardButton('Search Here', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Go Inline', switch_inline_query=''),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         user = message.from_user
