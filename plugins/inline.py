@@ -73,8 +73,11 @@ async def answer(bot, query):
 def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [[
-        InlineKeyboardButton('Search Again 🔎', switch_inline_query_current_chat=query),
-        InlineKeyboardButton('Share Our Bot ✅', url=url),
+        [InlineKeyboardButton('Search Again 🔎', switch_inline_query_current_chat=query),
+        InlineKeyboardButton('Share Our Bot ✅', url=url)],
+
+        [InlineKeyboardButton('Support Group 👥', url=https://t.me/leosupportx)
+        InlineKeyboardButton('Rate us ★', url=https://t.me/tlgrmcbot?start=leoinlinesearchbot-review)],
     ]]
     return InlineKeyboardMarkup(buttons)
 
