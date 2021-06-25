@@ -75,12 +75,12 @@ def get_reply_markup(username, query):
     buttons = [[
         [
           InlineKeyboardButton('Search Again 🔎', switch_inline_query_current_chat=query),
-          InlineKeyboardButton('Share Our Bot ✅', url=url)
+          InlineKeyboardButton('Share Our Bot ✅', url=url),
         ],
 
         [
-          InlineKeyboardButton('Support Group 👥', url="https://t.me/leosupportx"),
-          InlineKeyboardButton('Rate us ★', url="https://t.me/tlgrmcbot?start=leoinlinesearchbot-review")
+          InlineKeyboardButton('Support Group 👥', url='https://t.me/leosupportx'),
+          InlineKeyboardButton('Rate us ★', url='https://t.me/tlgrmcbot?start=leoinlinesearchbot-review'),
         ],
     ]]
     return InlineKeyboardMarkup(buttons)
