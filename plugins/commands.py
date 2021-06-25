@@ -17,11 +17,11 @@ async def start(bot, message):
     else:
         buttons = [[
             [
-              InlineKeyboardButton('Developer 🧑‍💻', url='https://t.me/naviya2'),
-              InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
+                InlineKeyboardButton('Developer 🧑‍💻', url='https://t.me/naviya2'),
+                InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
             ],
             [
-              InlineKeyboardButton('Search Mod Apps 🔎', switch_inline_query_current_chat=''),
+                InlineKeyboardButton(('Search Mod Apps 🔎', switch_inline_query_current_chat=''),
             ],
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
