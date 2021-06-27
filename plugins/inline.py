@@ -79,7 +79,7 @@ def get_reply_markup(username, query):
         ],
 
         [
-           InlineKeyboardButton('Support Group 👥', url='https://t.me/leosupportx'),
+           InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/new_ehi'),
            InlineKeyboardButton('Rate us ★', url='https://t.me/tlgrmcbot?start=leoinlinesearchbot-review'),
         ],
     ]
