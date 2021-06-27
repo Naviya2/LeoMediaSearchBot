@@ -33,19 +33,17 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 START_MSG = """
 **Hi {first_name}👋
 
-I'm Leo Mod Apps Bot 🇱🇰**
+I'm Leo Media Search Bot**
 
-Here you can find any mod app by searching its name 😊
-
-You can start searching by the "Search Mod Apps 🔎" button below 🙂
+You can start searching by the "Search Media 🔎" button below 🙂
 """
 
 SHARE_BUTTON_TEXT = """
-Leo Mod Apps Bot 🇱🇰
+Leo Media Search Bot 🇱🇰
 
-Here you can find any mod app by searching its name 😊
+Here you can find any media file by searching its name 😊
 
-Bot : @leoinlinesearchbot 🇱🇰
+Bot : {username} 🤖
 Support Group : @leosupportx 🇱🇰
 Updates Channel: @new_ehi 🇱🇰
 Developper : @naviya2 🇱🇰
