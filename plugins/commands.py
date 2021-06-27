@@ -17,7 +17,7 @@ async def start(bot, message):
     else:
         buttons = [
             [
-                InlineKeyboardButton('Developer 🧑‍💻', url='https://t.me/naviya2'),
+                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/naviya2'),
                 InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
             ],
             [
@@ -62,10 +62,10 @@ async def channel_info(bot, message):
 @Client.on_message(filters.command('total') & filters.user(ADMINS))
 async def total(bot, message):
     """Show total files in database"""
-    msg = await message.reply("Processing...⏳", quote=True)
+    msg = await message.reply("Processing...⏳\nLeo Projects 🇱🇰", quote=True)
     try:
         total = await Media.count_documents()
-        await msg.edit(f'📁 Saved files: {total}')
+        await msg.edit(f'📁 Total files saved in Leo Media Search Bot's Database: {total}')
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
@@ -85,7 +85,7 @@ async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
     if reply and reply.media:
-        msg = await message.reply("Processing...⏳", quote=True)
+        msg = await message.reply("Processing...⏳\nLeo Projects 🇱🇰", quote=True)
     else:
         await message.reply('Reply to file with /delete which you want to delete', quote=True)
         return
