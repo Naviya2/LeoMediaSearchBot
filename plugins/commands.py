@@ -65,7 +65,7 @@ async def total(bot, message):
     msg = await message.reply("Processing...⏳\nLeo Projects 🇱🇰", quote=True)
     try:
         total = await Media.count_documents()
-        await msg.edit(f'📁 Total files saved in Leo Media Search Bot's Database: {total}')
+        await msg.edit(f'📁 Total files saved in Leo Media Search Bots Database: {total}')
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
