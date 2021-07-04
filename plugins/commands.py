@@ -17,7 +17,7 @@ async def start(bot, message):
     else:
         buttons = [
             [
-                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/naviya2'),
+                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/new_ehi'),
                 InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
             ],
             [
