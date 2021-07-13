@@ -1,4 +1,5 @@
 pyrogram
+pymongo
 TgCrypto
 dnspython
 aiofiles
