@@ -46,7 +46,7 @@
         "BROADCAST_AS_COPY": {
             "description": "Broadcast as Copy or with Forward Tag. Value should be True/False."
         },
-        "SESSION_NAME": {
+        "SESSION": {
             "description": "Any Bot Session Name for Save Users in db"
         },
         "CHANNELS": {
