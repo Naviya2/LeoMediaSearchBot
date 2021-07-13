@@ -33,7 +33,7 @@
             "description": "Get this value from https://my.telegram.org",
             "value": ""
         },
-        BOT_OWNER": {
+        "BOT_OWNER": {
             "description": "Bot Owner UserID"
         },
         "UPDATES_CHANNEL": {
