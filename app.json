@@ -33,6 +33,22 @@
             "description": "Get this value from https://my.telegram.org",
             "value": ""
         },
+        BOT_OWNER": {
+            "description": "Bot Owner UserID"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789",
+            "required": false
+        },
+        LOG_CHANNEL": {
+            "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
+        },
+        "BROADCAST_AS_COPY": {
+            "description": "Broadcast as Copy or with Forward Tag. Value should be True/False."
+        },
+        "SESSION_NAME": {
+            "description": "Any Bot Session Name for Save Users in db"
+        },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
             "value": ""
@@ -45,11 +61,6 @@
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "value": "",
             "required": false
-        },
-        "AUTH_CHANNEL": {
-            "description": "Username or ID of channel. Without subscribing this channel users cannot use bot.",
-            "value": "",
-            "required": true
         },
         "INVITE_MSG": {
             "description": "Auth channel invitation message",
