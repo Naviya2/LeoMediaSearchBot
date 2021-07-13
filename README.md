@@ -18,7 +18,7 @@
 <br>
 
 <p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/Naviya2/Leo-Renamer-Bot/tree/main">
+  <a href="https://heroku.com/deploy?template=https://github.com/Naviya2/LeoMediaSearchBot/tree/main-1">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 </p>
@@ -91,10 +91,8 @@ Contributions are welcome.
 ## Thanks to [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 ### Support Group 🇱🇰
-<a href="https://t.me/leosupportx"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/leosupportx"><img src="https://img.shields.io/badge/Telegram-Join%20Support%20Group-blue.svg?logo=telegram"></a>
  
 ### Updates Channel 🇱🇰
-<a href="https://t.me/new_ehi"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Channel-blue.svg?logo=telegram"></a>
+<a href="https://t.me/new_ehi"><img src="https://img.shields.io/badge/Telegram-Join%20Updates%20Channel-blue.svg?logo=telegram"></a>
 
-
-Copy rights @Leo Projects 🇱🇰
