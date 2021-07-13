@@ -11,8 +11,20 @@
 ## Installation
 
 ### Easy Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## Deploy To Heroku
 
+<details>
+  <summary><b>Deploy on Heroku</b></summary>
+<br>
+
+<p align="left">
+  <a href="https://heroku.com/deploy?template=https://github.com/Naviya2/Leo-Renamer-Bot/tree/main">
+     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
+  </a>
+</p>
+  
+</details>
+  
 
 ### Hard Way
 
@@ -71,12 +83,18 @@ broadcast - broascast any message to all the users of bot
 * You can use `|` to separate query and file type while searching for specific type of file. For example: `Avengers | video`
 * If you don't want to create a channel or group, use your chat ID / username as the channel ID. When you send a file to a bot, it will be saved in the database.
 
+---
+
 ## Contributions
 Contributions are welcome.
 
 ## Thanks to [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-## Support
-[Update Channel](https://t.me/new_ehi) and [Support Group](https://t.me/leosupportx)
+### Support Group 🇱🇰
+<a href="https://t.me/leosupportx"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
+ 
+### Updates Channel 🇱🇰
+<a href="https://t.me/new_ehi"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Channel-blue.svg?logo=telegram"></a>
 
-Copy rights @LEo Projects
+
+Copy rights @Leo Projects 🇱🇰
