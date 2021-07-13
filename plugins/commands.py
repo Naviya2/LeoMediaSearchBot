@@ -145,12 +145,12 @@ async def delete(bot, message):
         await msg.edit('File not found in database\nLeo Projects🇱🇰')
 
 
-@RenameBot.on_message(filters.private & filters.command("broadcast") & filters.user(info.BOT_OWNER) & filters.reply)
+@Client.on_message(filters.private & filters.command("broadcast") & filters.user(info.BOT_OWNER) & filters.reply)
 async def _broadcast(_, bot: Message):
     await broadcast_handler(bot)
 
 
-@RenameBot.on_message(filters.private & filters.command("stats") & filters.user(info.BOT_OWNER))
+@Client.on_message(filters.private & filters.command("stats") & filters.user(info.BOT_OWNER))
 async def show_status_count(_, bot: Message):
     total, used, free = shutil.disk_usage(".")
     total = humanbytes(total)
