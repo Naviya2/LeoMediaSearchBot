@@ -17,7 +17,7 @@ from helpers.database.access_db import db
 from helpers.forcesub import ForceSub
 from helpers.broadcast import broadcast_handler
 from helpers.database.add_user import AddUserToDatabase
-from helpers.display_progress import humanbytes
+from helpers.humanbytes import humanbytes
 from utils import Media
 
 logger = logging.getLogger(__name__)
