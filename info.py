@@ -43,9 +43,7 @@ BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1
 
 
 # Messages
-START_MSG = environ.get('START_MSG', Default_Start_Msg)
-
-Default_Start_Msg = """
+default_start_massege = """
 **Hi {}👋
 
 I'm Leo Media Search Bot**
@@ -63,4 +61,7 @@ Support Group : @leosupportx 🇱🇰
 Updates Channel: @new_ehi 🇱🇰
 Developper : @naviya2 🇱🇰
 """
+
+START_MSG = environ.get('START_MSG', default_start_massege)
+
 INVITE_MSG = environ.get('INVITE_MSG', 'Please join @.... to use this bot')
