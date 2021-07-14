@@ -1,12 +1,22 @@
-# [Leo Media Search bot](https://github.com/Naviya2/LeoMediaSearchBot)
+<h1 align="center"><b>Leo Media Search Bot 🇱🇰</b></h1>
+
+# Features 
 
 * Index channel or group files for inline search.
 * When you post file on telegram channel or group this bot will save that file in database, so you can search easily in inline mode.
 * Supports document, video and audio file formats with caption support.
+* Broadcast to the all of users in database
+* Can view user stats in bot's database
+* Can ban or unban any user from database
 
 <p align="center">
   <img src="https://telegra.ph/file/c705fac44db2b8d7f47e7.jpg"></p>
 
+<p align="center">
+    <a href="https://github.com/Naviya2/LeoMediaSearchBot"> <img src="https://img.shields.io/github/repo-size/Naviya2/LeoMediaSearchBot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Naviya2/LeoMediaSearchBot/commits/Naviya2"> <img src="https://img.shields.io/github/last-commit/Naviya2/LeoMediaSearchBot?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Naviya2/LeoMediaSearchBot/issues"> <img src="https://img.shields.io/github/issues/Naviya2/LeoMediaSearchBot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Naviya2/LeoMediaSearchBot/network/members"> <img src="https://img.shields.io/github/forks/Naviya2/LeoMediaSearchBot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a></p>
 
 ## Installation
 
@@ -91,8 +101,8 @@ bannedusers - Get banned users list
 ## Contributions
 Contributions are welcome.
 
-## Code
-Imported some codes from [Media Search Repo](https://github.com/Mahesh0253/Media-Search-bot)
+## Special Thanks 
+Imported some codes from [Media Search Repo](https://github.com/Mahesh0253/Media-Search-bot) ❤️
 
 ### Support Group 🇱🇰
 <a href="https://t.me/leosupportx"><img src="https://img.shields.io/badge/Telegram-Join%20Support%20Group-blue.svg?logo=telegram"></a>
