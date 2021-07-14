@@ -12,7 +12,7 @@ API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
 USERBOT_STRING_SESSION = environ.get('USERBOT_STRING_SESSION')
 BOT_OWNER = int(os.environ.get("BOT_OWNER", 1069002447))
-BOT_USERNAME = os.environ.get("BOT_USERNAME")
+BOT_USERNAME = int(os.environ.get("BOT_USERNAME", @leoinlinesearchbot))
 
 # Bot settings
 MAX_RESULTS = int(environ.get('MAX_RESULTS', 10))
