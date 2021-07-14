@@ -67,7 +67,7 @@
         },
         "START_MSG": {
             "description": "A Massege for view at start. Id you want to change it you can change it here",
-            "value": "**Hi {}👋\n\nI'm Leo Media Search Bot**\n\nYou can start searching by the "Search Media 🔎 Button Below 😊",
+            "value": "**Hi {}👋\n\nI'm Leo Media Search Bot**\n\nYou can start searching by the 'Search Media 🔎' Button Below 😊",
             "required": false
         },
         "USE_CAPTION_FILTER": {
