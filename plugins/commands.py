@@ -165,7 +165,7 @@ async def show_status_count(_, bot: Message):
     disk_usage = psutil.disk_usage('/').percent
     total_users = await db.total_users_count()
     await bot.reply_text(
-        text=f"**Total Disk Space:** {total} \n**Used Space:** {used}({disk_usage}%) \n**Free Space:** {free} \n**CPU Usage:** {cpu_usage}% \n**RAM Usage:** {ram_usage}%\n\n**Total Users in DB:** `{total_users}`\n\n@leoinlinesearchbot 🇱🇰",
+        text=f"**Total Disk Space:** {total} \n**Used Space:** {used}({disk_usage}%) \n**Free Space:** {free} \n**CPU Usage:** {cpu_usage}% \n**RAM Usage:** {ram_usage}%\n\n**Total Users in DB:** `{total_users}`\n\n@{info.BOT_USERNAME}",
         parse_mode="Markdown",
         quote=True
     )
