@@ -74,7 +74,9 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 * `AUTH_USERS`: Username or ID of users to give access of inline search. Separate multiple users by space. Leave it empty if you don't want to restrict bot usage.
 * `LOG_CHANNEL`: a channel id for save all the logs of bot
 * `UPDATES_CHANNEL`: Username or ID of channel. Without subscribing this channel users cannot use bot.
-* `INVITE_MSG`: Auth channel invitation message.
+* `START_MSG`: Bot's Start Msg.
+* `SESSION` : A session name for save users in db.
+* `BOT_USERNAME` : Bot' username . Get it from botfather..
 * `USERBOT_STRING_SESSION`: User bot string session.
 
 ## Admin commands
