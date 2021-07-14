@@ -91,7 +91,8 @@ bannedusers - Get banned users list
 ## Contributions
 Contributions are welcome.
 
-## Thanks to [Pyrogram](https://github.com/pyrogram/pyrogram)
+## Code
+Imported some codes from [Media Search Repo](https://github.com/Mahesh0253/Media-Search-bot)
 
 ### Support Group 🇱🇰
 <a href="https://t.me/leosupportx"><img src="https://img.shields.io/badge/Telegram-Join%20Support%20Group-blue.svg?logo=telegram"></a>
