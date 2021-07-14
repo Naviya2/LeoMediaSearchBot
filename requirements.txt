@@ -9,3 +9,4 @@ Pillow
 hachoir
 pyromod
 psutil
+traceback
