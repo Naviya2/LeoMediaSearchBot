@@ -44,7 +44,7 @@ BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1
 
 # Messages
 START_MSG = """
-**Hi {first_name}👋
+**Hi {}👋
 
 I'm Leo Media Search Bot**
 
