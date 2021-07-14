@@ -6,7 +6,6 @@ import datetime
 import aiofiles.os
 import traceback
 import info
-from pyromod import listen
 from helpers.database.access_db import db
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
