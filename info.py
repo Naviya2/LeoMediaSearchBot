@@ -43,7 +43,9 @@ BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1
 
 
 # Messages
-START_MSG = """
+START_MSG = environ.get('START_MSG', Default_Start_Msg)
+
+Default_Start_Msg = """
 **Hi {}👋
 
 I'm Leo Media Search Bot**
