@@ -48,7 +48,7 @@ default_start_massege = """
 
 I'm Leo Media Search Bot**
 
-You can start searching by the "Search Media 🔎" button below 🙂
+You can start searching by the "Search Media 🔎" button below 😊
 """
 
 SHARE_BUTTON_TEXT = """
