@@ -65,6 +65,9 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB]
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com)
 * `BOT_OWNER` : user id of the owner
+* `SESSION` : A session name for save users in db.
+* `BOT_USERNAME` : Bot' username . Get it from botfather..
+* `UPDATES_CHANNEL`: Username or ID of channel. Without subscribing this channel users cannot use bot.
 
 ### Optional Variables
 * `COLLECTION_NAME`: Name of the collections. Defaults to Telegram_files. If you going to use same database, then use different collection name for each bot
@@ -73,10 +76,7 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 * `USE_CAPTION_FILTER`: Whether bot should use captions to improve search results. (True/False)
 * `AUTH_USERS`: Username or ID of users to give access of inline search. Separate multiple users by space. Leave it empty if you don't want to restrict bot usage.
 * `LOG_CHANNEL`: a channel id for save all the logs of bot
-* `UPDATES_CHANNEL`: Username or ID of channel. Without subscribing this channel users cannot use bot.
 * `START_MSG`: Bot's Start Msg.
-* `SESSION` : A session name for save users in db.
-* `BOT_USERNAME` : Bot' username . Get it from botfather..
 * `USERBOT_STRING_SESSION`: User bot string session.
 
 ## Admin commands
