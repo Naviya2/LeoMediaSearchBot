@@ -37,6 +37,9 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
 
+#ban/unban
+BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
+BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 
 
 # Messages
