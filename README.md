@@ -76,6 +76,9 @@ index - Index all files from channel or group
 logger - Get log file
 stats - get recent user stats
 broadcast - broascast any message to all the users of bot
+banuser - to ban a user from database
+unbanuser - to unban a user from database
+bannedusers - Get banned users list
 ```
 
 ## Tips
