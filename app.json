@@ -36,6 +36,9 @@
         "BOT_OWNER": {
             "description": "Bot Owner UserID"
         },
+        "BOT_USERNAME":{
+            "description": "Bot username without @"
+        },
         "UPDATES_CHANNEL": {
             "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789",
             "required": false
