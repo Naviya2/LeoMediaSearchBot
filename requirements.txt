@@ -1,3 +1,4 @@
+https://github.com/Naviya2/pyrogram-1/archive/refs/heads/master.zip
 pyrogram
 pymongo
 umongo
