@@ -50,7 +50,7 @@
             "description": "Broadcast as Copy or with Forward Tag. Value should be True/False."
         },
         "SESSION": {
-            "description": "Any Bot Session Name for Save Users in db"
+            "description": "Any Bot Session Name for Save Users in db. use the same name which in Database Name field"
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
