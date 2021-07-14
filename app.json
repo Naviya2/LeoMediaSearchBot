@@ -67,7 +67,7 @@
         },
         "START_MSG": {
             "description": "A Massege for view at start. Id you want to change it you can change it here",
-            "value": "**Hi {}👋\n\nI'm Leo Media Search Bot**\n\nYou can start searching by the 'Search Media 🔎' Button Below 😊",
+            "value": "**Hi {}👋\n\nI'm Leo Media Search Bot**\n\nYou can start searching by the 'Search Media 🔎' button below 😊",
             "required": false
         },
         "USE_CAPTION_FILTER": {
@@ -76,7 +76,7 @@
             "required": false
         },
         "DATABASE_URI": {
-            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help ask in t.me/leosupportx",
             "value": "",
             "required": true
         },
