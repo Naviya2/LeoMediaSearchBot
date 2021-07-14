@@ -42,7 +42,7 @@ async def ForceSub(bot: Client, event: Message):
     except UserNotParticipant:
         await bot.send_message(
             chat_id=event.from_user.id,
-            text="**Hello {} 👋\n\nYou cant use me untill subscribe our updates channel ☹️\nSo Please join our updates channel by the following button and restart our bot by ( /start ) command 😊**".format(event.from_user.mention),
+            text="Hello {} 👋\n\n**You cant use me untill subscribe our updates channel ☹️\nSo Please join our updates channel by the following button and restart our bot by ( /start ) command 😊**".format(event.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
