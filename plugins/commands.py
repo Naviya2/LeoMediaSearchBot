@@ -175,7 +175,7 @@ async def ban(bot, message):
     
     if len(message.command) == 1:
         await message.reply_text(
-            f"Use this command to ban any user from the bot 😊\n\nUsage:\n\n`/banuser user_id ban_duration ban_reason`\n\nEg: `/ban_user 1234567 28 You misused me.`\n This will ban user with id `1234567` for `28` days for the reason `You misused me` 😊",
+            f"Use this command to ban any user from the bot 😊\n\nUsage:\n\n`/banuser user_id ban_duration ban_reason`\n\nEg: `/banuser 1234567 28 You misused me.`\n This will ban user with id `1234567` for `28` days for the reason `You misused me` 😊",
             quote=True
         )
         return
@@ -214,7 +214,7 @@ async def unban(bot, message):
 
     if len(message.command) == 1:
         await message.reply_text(
-            f"Use this command to unban any user 😊\n\nUsage:\n\n`/unbanuser user_id`\n\nEg: `/unban_user 1234567`\n This will unban user with id `1234567`.",
+            f"Use this command to unban any user 😊\n\nUsage:\n\n`/unbanuser user_id`\n\nEg: `/unbanuser 1234567`\n This will unban user with id `1234567`.",
             quote=True
         )
         return
