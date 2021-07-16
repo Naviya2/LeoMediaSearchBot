@@ -1,4 +1,4 @@
 import info
 from helpers.database.database import Database
 
-db = Database(info.DATABASE_URI, info.SESSION)
+db = Database(info.MONGODB_URI, info.SESSION_NAME)
