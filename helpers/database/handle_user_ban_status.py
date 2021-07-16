@@ -7,6 +7,7 @@ from pyrogram.types import Message
 
 
 async def HandleUserBanStatus(bot: Client, cmd: Message):
+chat_id = cmd.from_user.id
 ban_status = await db.get_ban_status(chat_id)
     if ban_status["is_banned"]:
         if (
