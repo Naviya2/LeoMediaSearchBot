@@ -42,6 +42,10 @@ BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").
 BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 
 
+#for broadcast and user stts db
+MONGODB_URI = os.environ.get("MONGODB_URI", "")
+SESSION_NAME = os.environ.get("SESSION_NAME", "LeoMediaSearchBot")
+
 # Messages
 default_start_massege = """
 **Hi {}👋
