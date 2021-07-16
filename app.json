@@ -49,8 +49,8 @@
         "BROADCAST_AS_COPY": {
             "description": "Broadcast as Copy or with Forward Tag. Value should be True/False."
         },
-        "SESSION": {
-            "description": "Any Bot Session Name for Save Users in db. use the same name which in Database Name field"
+        "SESSION_NAME": {
+            "description": "Any Bot Session Name for Save Users in db."
         },
         "CHANNELS": {
             "description": "Username or ID of database channel or group. Separate multiple IDs by space.",
@@ -83,6 +83,10 @@
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help ask in t.me/leosupportx",
             "value": "",
             "required": true
+        },
+        "MONGODB_URI": {
+            "description": "mongo based db for save users in db .. Dont use the inline search bots database URI",
+            "required": false
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB.",
