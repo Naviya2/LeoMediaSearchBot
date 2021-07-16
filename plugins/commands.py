@@ -19,7 +19,7 @@ from helpers.database.database import Database
 from helpers.forcesub import ForceSub
 from helpers.broadcast import broadcast_handler
 from helpers.database.add_user import AddUserToDatabase
-from helpers.database.handle_user_ban_status import handle_user_ban_status
+from helpers.database.handle_user_ban_status import HandleUserBanStatus
 from helpers.humanbytes import humanbytes
 from utils import Media
 
@@ -32,7 +32,7 @@ async def start(bot, message):
         await message.reply_text("Sorry, You are banned to use me ☹️ Please Contact  Bot Owner 😊")
         return
     await AddUserToDatabase(bot, message)
-    await handle_user_ban_status(bot, message)
+    await HandleUserBanStatus(bot, message)
     FSub = await ForceSub(bot, message)
     if FSub == 400:
         return
