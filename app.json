@@ -65,7 +65,7 @@
             "value": "",
             "required": false
         },
-        "BANNED_USERS":|{
+        "BANNED_USERS": {
             "description": "Banned users user id , these users are banned from the bot permenentally",
             "required": false
         },
