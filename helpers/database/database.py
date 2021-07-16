@@ -13,10 +13,12 @@ class Database:
         return dict(
             id=id,
             join_date=datetime.date.today().isoformat(),
-            prefix=None,
-            upload_as_doc=True,
-            thumbnail=None,
-            caption=None
+            ban_status=dict(
+                is_banned=False,
+                ban_duration=0,
+                banned_on=datetime.date.max.isoformat(),
+                ban_reason=''
+            )
         )
 
     async def add_user(self, id):
@@ -34,7 +36,10 @@ class Database:
     async def get_all_users(self):
         all_users = self.col.find({})
         return all_users
-    
+
+    async def delete_user(self, user_id):
+        await self.col.delete_many({'id': int(user_id)})
+
     async def remove_ban(self, id):
         ban_status = dict(
             is_banned=False,
