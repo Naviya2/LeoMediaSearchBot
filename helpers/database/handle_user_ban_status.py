@@ -7,7 +7,7 @@ from pyrogram.types import Message
 
 
 async def HandleUserBanStatus(bot: Client, cmd: Message):
-ban_status = await db.get_ban_status(cmd.from_user.id)
+ban_status = await db.get_ban_status(cmd.from_user.id):
     if ban_status["is_banned"]:
         if (
                 datetime.date.today() - datetime.date.fromisoformat(ban_status["banned_on"])
