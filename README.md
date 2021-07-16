@@ -100,7 +100,7 @@ bannedusers - Get banned users list
 
 ---
 
-## Contributions
+# Contributions
 Contributions are welcome.
 
 # Special Thanks 
