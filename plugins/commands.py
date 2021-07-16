@@ -25,6 +25,10 @@ from utils import Media
 
 logger = logging.getLogger(__name__)
 
+@Client.on_message(filters.private)
+async def _(bot, message):
+    await handle_user_ban_status(bot, message)
+
 
 @Client.on_message(filters.command('start'))
 async def start(bot, message):
@@ -32,7 +36,6 @@ async def start(bot, message):
         await message.reply_text("Sorry, You are banned to use me ☹️ Please Contact  Bot Owner 😊")
         return
     await AddUserToDatabase(bot, message)
-    await HandleUserBanStatus(bot, message)
     FSub = await ForceSub(bot, message)
     if FSub == 400:
         return
