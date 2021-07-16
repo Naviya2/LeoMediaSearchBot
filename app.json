@@ -53,7 +53,7 @@
             "description": "Any Bot Session Name for Save Users in db. use the same name which in Database Name field"
         },
         "CHANNELS": {
-            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "description": "Username or ID of database channel or group. Separate multiple IDs by space.",
             "value": ""
         },
         "ADMINS": {
@@ -63,6 +63,10 @@
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "value": "",
+            "required": false
+        },
+        "BANNED_USERS":|{
+            "description": "Banned users user id , these users are banned from the bot permenentally",
             "required": false
         },
         "START_MSG": {
