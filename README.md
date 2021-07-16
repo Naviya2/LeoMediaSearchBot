@@ -18,7 +18,7 @@
     <a href="https://github.com/Naviya2/LeoMediaSearchBot/issues"> <img src="https://img.shields.io/github/issues/Naviya2/LeoMediaSearchBot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/Naviya2/LeoMediaSearchBot/network/members"> <img src="https://img.shields.io/github/forks/Naviya2/LeoMediaSearchBot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a></p>
 
-## Installation
+# Installation
 
 ### Easy Way
 ## Deploy To Heroku
@@ -54,7 +54,7 @@ python3 bot.py
 ```
 Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) file
 
-## Variables
+# Variables
 
 ### Required Variables
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
@@ -69,7 +69,7 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 * `BOT_USERNAME` : Bot' username . Get it from botfather..
 * `UPDATES_CHANNEL`: Username or ID of channel. Without subscribing this channel users cannot use bot.
 
-### Optional Variables
+# Optional Variables
 * `COLLECTION_NAME`: Name of the collections. Defaults to Telegram_files. If you going to use same database, then use different collection name for each bot
 * `MAX_RESULTS`: Maximum limit for inline search results
 * `CACHE_TIME`: The maximum amount of time in seconds that the result of the inline query may be cached on the server
@@ -79,7 +79,7 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 * `START_MSG`: Bot's Start Msg.
 * `USERBOT_STRING_SESSION`: User bot string session.
 
-## Admin commands
+# Admin commands
 ```
 channel - Get basic infomation about channels
 total - Show total of saved files
@@ -93,7 +93,7 @@ unbanuser - to unban a user from database
 bannedusers - Get banned users list
 ```
 
-## Tips
+# Tips
 * Use `index` command or run [one_time_indexer.py](one_time_indexer.py) file to save old files in the database that are not indexed yet.
 * You can use `|` to separate query and file type while searching for specific type of file. For example: `Avengers | video`
 * If you don't want to create a channel or group, use your chat ID / username as the channel ID. When you send a file to a bot, it will be saved in the database.
@@ -103,7 +103,7 @@ bannedusers - Get banned users list
 ## Contributions
 Contributions are welcome.
 
-## Special Thanks 
+# Special Thanks 
 Imported some codes from [Media Search Repo](https://github.com/Mahesh0253/Media-Search-bot) ❤️
 
 ### Support Group 🇱🇰
