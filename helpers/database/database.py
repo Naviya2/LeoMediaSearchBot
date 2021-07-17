@@ -58,7 +58,7 @@ class Database:
         )
         await self.col.update_one({'id': user_id}, {'$set': {'ban_status': ban_status}})
 
-   async def get_ban_status(self, id):
+    async def get_ban_status(self, id):
         default = dict(
             is_banned=False,
             ban_duration=0,
