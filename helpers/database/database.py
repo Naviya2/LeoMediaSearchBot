@@ -58,22 +58,15 @@ class Database:
         )
         await self.col.update_one({'id': user_id}, {'$set': {'ban_status': ban_status}})
 
-    async def get_ban_status(self, id):
+   async def get_ban_status(self, id):
         default = dict(
             is_banned=False,
             ban_duration=0,
             banned_on=datetime.date.max.isoformat(),
             ban_reason=''
         )
-        try:
-       user = await self.col.find_one({'id': int(id)})
-    except:
-       user = await self.col.find_one({'id': str(id)})|
-    try:
-       tt=user.get('ban_status', default)
-    except:
-    print("An exception occurred"+f'{str(id)}')
-         return user.get('ban_status', default)
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('ban_status', default)
 
     async def get_all_banned_users(self):
         banned_users = self.col.find({'ban_status.is_banned': True})
