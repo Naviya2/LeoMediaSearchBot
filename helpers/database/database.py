@@ -72,7 +72,7 @@ class Database:
         try:
            tt=user.get('ban_status', default)
         except:
-        print("An exception occurred"+f'{str(id)}')
+           print("An exception occurred"+f'{str(id)}')
         return user.get('ban_status', default)
     
     async def get_all_banned_users(self):
