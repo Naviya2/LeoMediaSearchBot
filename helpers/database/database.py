@@ -65,9 +65,16 @@ class Database:
             banned_on=datetime.date.max.isoformat(),
             ban_reason=''
         )
-        user = await self.col.find_one({'id': int(id)})
+        try:
+           user = await self.col.find_one({'id': int(id)})
+        except:   
+           user = await self.col.find_one({'id': str(id)})
+        try:
+           tt=user.get('ban_status', default)
+        except:
+        print("An exception occurred"+f'{str(id)}')
         return user.get('ban_status', default)
-
+    
     async def get_all_banned_users(self):
         banned_users = self.col.find({'ban_status.is_banned': True})
         return banned_users
