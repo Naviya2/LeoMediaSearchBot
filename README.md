@@ -23,6 +23,9 @@
 ### Easy Way
 ## Deploy To Heroku
 
+<p align="center"><a href="https://heroku.com/deploy?template=hhttps://github.com/Naviya2/LeoMediaSearchBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p> 
+
+
 <details>
   <summary><b>Deploy on Heroku</b></summary>
 <br>
