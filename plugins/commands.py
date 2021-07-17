@@ -19,7 +19,7 @@ from helpers.database.database import Database
 from helpers.forcesub import ForceSub
 from helpers.broadcast import broadcast_handler
 from helpers.database.add_user import AddUserToDatabase
-from helpers.database.handle_user_ban_status import handle_user_ban_status
+from helpers.database.check_user_ban_status import handle_user_ban_status
 from helpers.humanbytes import humanbytes
 from utils import Media
 
