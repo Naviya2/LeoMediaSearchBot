@@ -25,11 +25,6 @@ from utils import Media
 
 logger = logging.getLogger(__name__)
 
-@Client.on_message(filters.private)
-async def _(bot, message):
-    await handle_user_ban_status(bot, message)
-
-
 @Client.on_message(filters.command('start'))
 async def start(bot, message):
     if message.from_user.id in info.BANNED_USERS:
