@@ -28,6 +28,8 @@ logger = logging.getLogger(__name__)
 @Client.on_message(filters.private)
 async def _(bot, message):
     try:
+        for ml in info.BANNED_USERS:
+            print(str(ml))
         await handle_user_ban_status(bot, message)
     except:
         print(message)
