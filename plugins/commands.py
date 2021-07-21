@@ -29,10 +29,10 @@ logger = logging.getLogger(__name__)
 async def _(bot, message):
     try:
         for ml in info.BANNED_USERS:
-            print(str(ml))
+            print('TT >>>'+str(ml))
         await handle_user_ban_status(bot, message)
     except:
-        print(message)
+        print('Error on BAN Checker')
 
 @Client.on_message(filters.command('start'))
 async def start(bot, message):
