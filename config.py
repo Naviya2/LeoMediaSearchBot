@@ -4,7 +4,7 @@ import os
 class Config(object):
 BOT_TOKEN = environ('BOT_TOKEN', '1745816793:AAHNHaAVJW_YIyOy5x1K2FTyt9xbZ6DSZaY')
 API_HASH = environ('API_HASH', '8c99a2b1329cc263f71da0439cad959f')
-API_ID = int(environ('API_ID', '1481861'))
+API_ID = int(environ('API_ID', 1481861))
 SESSION = environ.get('SESSION', 'Testn')
 USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
 BOT_OWNER = int(os.environ.get("BOT_OWNER", 1069002447))
