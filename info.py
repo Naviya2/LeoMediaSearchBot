@@ -1,4 +1,3 @@
-import os
 import re
 from os import environ
 
