@@ -10,7 +10,7 @@ USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
 API_ID = int(environ['API_ID', 1481861])
 API_HASH = environ['API_HASH', '8c99a2b1329cc263f71da0439cad959f']
 BOT_TOKEN = environ['BOT_TOKEN', '1745816793:AAHNHaAVJW_YIyOy5x1K2FTyt9xbZ6DSZaY']
-USERBOT_STRING_SESSION = environ.get('USERBOT_STRING_SESSION', 'LeoMediaSearchBotUser)
+USERBOT_STRING_SESSION = environ.get('USERBOT_STRING_SESSION', 'LeoMediaSearchBotUser')
 BOT_OWNER = int(os.environ.get("BOT_OWNER", 1069002447))
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "testleonvibot")
 
