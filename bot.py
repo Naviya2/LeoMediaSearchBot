@@ -10,7 +10,7 @@ from pyromod import listen
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from utils import Media
-from info import SESSION, APP_ID, API_HASH, BOT_TOKEN
+from info import SESSION, APP_ID, APP_HASH, BOT_TOKEN
 
 class Bot(Client):
 
