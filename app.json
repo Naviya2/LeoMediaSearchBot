@@ -81,13 +81,13 @@
             "required": false
         },
         "DATABASE_URI": {
-            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help ask in t.me/leosupportx",
+            "description": "This is the db which use to save files to work inline search.. get it from mongodb.com",
             "value": "",
             "required": true
         },
         "MONGODB_URI": {
             "description": "mongo based db for save users in db .. Dont use the inline search bots database URI",
-            "required": false
+            "required": true
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB.",
