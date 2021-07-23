@@ -51,7 +51,7 @@ I'm Leo Media Search Bot**
 You can start searching by the "Search Media 🔎" button below 😊
 """
 
-SHARE_BUTTON_TEXT = """
+default_share_button_text = """
 Leo Media Search Bot 🇱🇰
 
 Here you can find any media file by searching its name 😊
@@ -63,5 +63,7 @@ Developper : @naviya2 🇱🇰
 """
 
 START_MSG = environ.get('START_MSG', default_start_massege)
+
+SHARE_BUTTON_TEXT = environ.get('SHARE_BUTTON_TEXT', default_share_button_text)
 
 INVITE_MSG = environ.get('INVITE_MSG', 'Please join @.... to use this bot')
