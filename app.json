@@ -71,8 +71,13 @@
             "required": false
         },
         "START_MSG": {
-            "description": "A Massege for view at start. Id you want to change it you can change it here",
+            "description": "A Massege for view at start. If you want to change it you can change it here",
             "value": "**Hi {}👋\n\nI'm Leo Media Search Bot**\n\nYou can start searching by the 'Search Media 🔎' button below 😊",
+            "required": false
+        },
+        "SHARE_BUTTON_TEXT": {
+            "description": "A Massege for add to share button. If you want to change it you can change it here",
+            "value": "**Leo Media Search Bot 🇱🇰**\n\n`Here you can find any media file by searching its name 😊´\n\n\nBot : {username} 🤖\nSupport Group : @leosupportx 🇱🇰\nUpdates Channel: @new_ehi 🇱🇰\nDevelopper : @naviya2 🇱🇰",
             "required": false
         },
         "USE_CAPTION_FILTER": {
