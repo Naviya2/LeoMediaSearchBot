@@ -2,7 +2,7 @@ import logging
 import asyncio
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-from info import USERBOT_STRING_SESSION, API_ID, API_HASH, ADMINS, id_pattern
+from info import USERBOT_STRING_SESSION, APP_ID, API_HASH, ADMINS, id_pattern
 from utils import save_file
 
 logger = logging.getLogger(__name__)
