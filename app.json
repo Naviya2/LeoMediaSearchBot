@@ -77,7 +77,7 @@
         },
         "SHARE_BUTTON_TEXT": {
             "description": "A Massege for add to share button. If you want to change it you can change it here",
-            "value": "**Leo Media Search Bot 🇱🇰**\n\n`Here you can find any media file by searching its name 😊´\n\n\nBot : {username} 🤖\nSupport Group : @leosupportx 🇱🇰\nUpdates Channel: @new_ehi 🇱🇰\nDevelopper : @naviya2 🇱🇰",
+            "value": "**Leo Media Search Bot 🇱🇰**\n\n`Here you can find any media file by searching its name 😊´\n\nBot : {username} 🤖\nSupport Group : @leosupportx 🇱🇰\nUpdates Channel: @new_ehi 🇱🇰\nDevelopper : @naviya2 🇱🇰",
             "required": false
         },
         "USE_CAPTION_FILTER": {
