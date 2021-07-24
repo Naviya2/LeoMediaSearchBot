@@ -5,7 +5,7 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'LeoMediaSearchBot')
+SESSION = environ.get('SESSION', '')
 USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
 APP_ID = int(environ['APP_ID'])
 API_HASH = environ['API_HASH']
