@@ -25,6 +25,10 @@
             "value": "",
             "required": false
         },
+        "SESSION": {
+            "description": "Session name for db.if u are already user of old media search bot. please type here that bot's session name. it can be found info.py file as SESSION",
+            "required": true
+        },
         "APP_ID": {
             "description": "Get this value from https://my.telegram.org",
             "value": ""
