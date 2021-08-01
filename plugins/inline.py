@@ -56,7 +56,7 @@ async def answer(bot, query):
         await query.answer(results=results,
                            cache_time=CACHE_TIME,
                            switch_pm_text=switch_pm_text,
-                           switch_pm_parameter="search",
+                           switch_pm_parameter="start",
                            next_offset=str(next_offset))
     else:
 
