@@ -1,7 +1,7 @@
 # © Naviya2
 
 import asyncio
-import config
+import info
 from pyrogram import Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
@@ -18,16 +18,16 @@ async def ForceSub(bot: Client, event: Message):
     """
     
     try:
-        invite_link = await bot.create_chat_invite_link(chat_id=(int(config.UPDATES_CHANNEL)))
+        invite_link = await bot.create_chat_invite_link(chat_id=(int(info.UPDATES_CHANNEL)))
     except FloodWait as e:
         await asyncio.sleep(e.x)
         fix_ = await ForceSub(bot, event)
         return fix_
     except Exception as err:
-        print(f"Unable to do Force Subscribe to {config.UPDATES_CHANNEL}\n\nError: {err}\n\nContact Support Group: https://t.me/leosupportx")
+        print(f"Unable to do Force Subscribe to {info.UPDATES_CHANNEL}\n\nError: {err}\n\nContact Support Group: https://t.me/leosupportx")
         return 200
     try:
-        user = await bot.get_chat_member(chat_id=(int(config.UPDATES_CHANNEL)), user_id=event.from_user.id)
+        user = await bot.get_chat_member(chat_id=(int(info.UPDATES_CHANNEL)), user_id=event.from_user.id)
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=event.from_user.id,
