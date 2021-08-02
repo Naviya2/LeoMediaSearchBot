@@ -5,7 +5,7 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'LeoMediaSearchBot')
+SESSION = environ.get('SESSION', 'Media_search')
 USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
 APP_ID = int(environ.get('APP_ID', 1481861))
 API_HASH = environ.get('API_HASH', '8c99a2b1329cc263f71da0439cad959f')
@@ -20,20 +20,20 @@ AUTH_CHANNEL = environ.get('AUTH_CHANNEL')
 # Bot settings
 MAX_RESULTS = int(environ.get('MAX_RESULTS', 10))
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', "False"))
 
 # Admins, Channels & Users
 ADMINS = int(environ.get('ADMINS', 1069002447))
-CHANNELS = int(environ.get('CHANNELS', -1001560862542))
+CHANNELS = int(environ.get('CHANNELS', -1001578165465))
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL",  -1001560862542))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://Naviyaa:navi18572@cluster0.swycj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
-DATABASE_NAME = environ.get('DATABASE_NAME', 'Test')
+DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://Erichdaniken:Erichdaniken@cluster0.mqvzd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+DATABASE_NAME = environ.get('DATABASE_NAME', 'Naviyaofficial')
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #for broadcast and force sub
-BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
+BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
 UPDATES_CHANNEL = environ.get("UPDATES_CHANNEL", -1001231683570)
 
 #ban/unban
