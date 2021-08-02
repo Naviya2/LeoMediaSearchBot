@@ -34,9 +34,6 @@ async def start(bot, message):
     FSub = await ForceSub(bot, message)
     if FSub == 400:
         return
-    """Start command handler"""
-    if len(message.command) > 1 and message.command[1] == 'subscribe':
-        await message.reply(INVITE_MSG.format(message.from_user.mention))
     else:
         buttons = [
             [
