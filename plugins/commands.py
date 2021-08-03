@@ -24,6 +24,7 @@ from utils import Media
 
 logger = logging.getLogger(__name__)
 
+START_IMG = "https://telegra.ph/file/931264811fd3c2c02dc7d.jpg"
 
 @Client.on_message(filters.command('start'))
 async def start(bot, message):
@@ -34,20 +35,12 @@ async def start(bot, message):
     FSub = await ForceSub(bot, message)
     if FSub == 400:
         return
-    else:
-        buttons = [
-            [
-                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/new_ehi'),
-                InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
-            ],
-            [
-                InlineKeyboardButton('Search Mod Apps 🔎', switch_inline_query_current_chat=''),
-            ],
-        ]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply(START_MSG.format(message.from_user.mention), reply_markup=reply_markup)
-
-
+    await message.reply_photo(
+        START_IMG,
+        caption=info.START_MSG.format(message.from_user.mention),
+        reply_markup=info.HOME_BUTTONS
+    )
+    
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
     await AddUserToDatabase(bot, message)
