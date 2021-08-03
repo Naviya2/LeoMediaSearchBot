@@ -26,10 +26,10 @@ async def cb_data(bot, message):
             disable_web_page_preview=True
         )
     elif message.data == "refreshme":
-        if config.UPDATES_CHANNEL:
-            invite_link = await client.create_chat_invite_link(int(info.UPDATES_CHANNEL))
+        if info.UPDATES_CHANNEL:
+            invite_link = await bot.create_chat_invite_link(int(info.UPDATES_CHANNEL))
             try:
-                user = await client.get_chat_member(int(info.UPDATES_CHANNEL), message.message.chat.id)
+                user = await bot.get_chat_member(int(info.UPDATES_CHANNEL), message.message.chat.id)
                 if user.status == "kicked":
                     await message.message.edit(
                         text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/leosupportx).",
