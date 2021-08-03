@@ -13,7 +13,7 @@ from asyncio import TimeoutError
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pyrogram import Client, filters
-from info import START_MSG, CHANNELS, ADMINS, INVITE_MSG
+from info import START_MSG, HOME_BUTTONS, CHANNELS, ADMINS, INVITE_MSG
 from helpers.database.access_db import db
 from helpers.database.database import Database
 from helpers.forcesub import ForceSub
