@@ -25,6 +25,10 @@
             "value": "",
             "required": false
         },
+        "SESSION": {
+            "description": "Session name for db.if u are already user of old media search bot. please type here that bot's session name. it can be found info.py file as SESSION",
+            "required": true
+        },
         "APP_ID": {
             "description": "Get this value from https://my.telegram.org",
             "value": ""
@@ -71,8 +75,13 @@
             "required": false
         },
         "START_MSG": {
-            "description": "A Massege for view at start. Id you want to change it you can change it here",
+            "description": "A Massege for view at start. If you want to change it you can change it here",
             "value": "**Hi {}👋\n\nI'm Leo Media Search Bot**\n\nYou can start searching by the 'Search Media 🔎' button below 😊",
+            "required": false
+        },
+        "SHARE_BUTTON_TEXT": {
+            "description": "A Massege for add to share button. If you want to change it you can change it here",
+            "value": "**Leo Media Search Bot 🇱🇰**\n\n`Here you can find any media file by searching its name 😊´\n\nBot : {username} 🤖\nSupport Group : @leosupportx 🇱🇰\nUpdates Channel: @new_ehi 🇱🇰\nDevelopper : @naviya2 🇱🇰",
             "required": false
         },
         "USE_CAPTION_FILTER": {
@@ -81,13 +90,13 @@
             "required": false
         },
         "DATABASE_URI": {
-            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help ask in t.me/leosupportx",
+            "description": "This is the db which use to save files to work inline search.. get it from mongodb.com",
             "value": "",
             "required": true
         },
         "MONGODB_URI": {
             "description": "mongo based db for save users in db .. Dont use the inline search bots database URI",
-            "required": false
+            "required": true
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB.",
