@@ -25,7 +25,7 @@
             "value": "",
             "required": false
         },
-        "API_ID": {
+        "APP_ID": {
             "description": "Get this value from https://my.telegram.org",
             "value": ""
         },
