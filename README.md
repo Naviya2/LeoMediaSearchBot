@@ -7,7 +7,6 @@
 * Supports document, video and audio file formats with caption support.
 * Broadcast to the all of users in database
 * Can view user stats in bot's database
-* Can ban or unban any user from database
 
 <p align="center">
   <img src="https://telegra.ph/file/c705fac44db2b8d7f47e7.jpg"></p>
