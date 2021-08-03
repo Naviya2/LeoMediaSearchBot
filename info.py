@@ -101,7 +101,7 @@ HOME_BUTTONS = InlineKeyboardMarkup(
                 InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
             ],
             [
-                InlineKeyboardButton('Help Menu 🆘', callback_data='home'),
+                InlineKeyboardButton('Help Menu 🆘', callback_data='help'),
             ],
             [
                 InlineKeyboardButton('Search Mod Apps 🔎', switch_inline_query_current_chat=''),
@@ -124,8 +124,8 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 ABOUT_BUTTONS = InlineKeyboardMarkup(
        [
             [
-                InlineKeyboardButton('Home 🏠', url='https://t.me/new_ehi'),
-                InlineKeyboardButton('Help Menu 🆘', callback_data='home'),
+                InlineKeyboardButton('Home 🏠', callback data='home'),
+                InlineKeyboardButton('Help Menu 🆘', callback_data='help'),
             ],
             [
                 InlineKeyboardButton('Close ❎', callback_data='close'),
