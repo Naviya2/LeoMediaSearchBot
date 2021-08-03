@@ -1,7 +1,6 @@
 import os
 import re
 from os import environ
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 id_pattern = re.compile(r'^.\d+$')
 
