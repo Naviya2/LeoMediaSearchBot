@@ -1,5 +1,5 @@
 import os
-from  info import START_MSG, HELP_TEXT, ABOUT_TEXT, HOME_BUTTONS, HELP_BUTTONS, ABOUT_BUTTONS
+from  info import START_MSG, HELP_TEXT, ABOUT_TEXT, HOME_BUTTONS, HELP_BUTTONS, ABOUT_BUTTONS, UPDATES_CHANNEL
 from pyrogram import Client
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -27,9 +27,9 @@ async def cb_data(bot, message):
         )
     elif message.data == "refreshme":
         if config.UPDATES_CHANNEL:
-            invite_link = await client.create_chat_invite_link(int(config.UPDATES_CHANNEL))
+            invite_link = await client.create_chat_invite_link(int(info.UPDATES_CHANNEL))
             try:
-                user = await client.get_chat_member(int(config.UPDATES_CHANNEL), message.message.chat.id)
+                user = await client.get_chat_member(int(info.UPDATES_CHANNEL), message.message.chat.id)
                 if user.status == "kicked":
                     await message.message.edit(
                         text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/leosupportx).",
@@ -47,7 +47,7 @@ async def cb_data(bot, message):
                             ],
                             [
                                 InlineKeyboardButton("Refresh 🔄", callback_data="refreshme")
-                            ]
+                            ],
                         ]
                     ),
                     parse_mode="HTML"
