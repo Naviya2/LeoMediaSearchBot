@@ -14,8 +14,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '1844693567:AAEXgRNBBMcd_QapU6ZBGR_mAD5-OAu
 USERBOT_STRING_SESSION = environ.get('USERBOT_STRING_SESSION', 'LeoMediaSearchBotUser')
 BOT_OWNER = int(os.environ.get("BOT_OWNER", 1069002447))
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "leoinlinesearchbot")
-AUTH_USERS = int(environ.get('AUTH_USERS', ''))
-AUTH_CHANNEL = environ.get('AUTH_CHANNEL')
+AUTH_USERS = int(environ.get('AUTH_USERS')
 
 
 # Bot settings
