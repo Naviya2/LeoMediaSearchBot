@@ -12,7 +12,7 @@ API_HASH = environ.get('API_HASH', '8c99a2b1329cc263f71da0439cad959f')
 BOT_TOKEN = environ.get('BOT_TOKEN', '1745816793:AAGzEcqMoAwUOyYznx4qGQjAcLixNliSO-A')
 USERBOT_STRING_SESSION = environ.get('USERBOT_STRING_SESSION', 'LeoMediaSearchBotUser')
 BOT_OWNER = int(os.environ.get("BOT_OWNER", 1069002447))
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "testleonvibot")
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "leoinlinesearchbot")
 AUTH_USERS = int(environ.get('AUTH_USERS', -100))
 AUTH_CHANNEL = environ.get('AUTH_CHANNEL')
 
@@ -49,15 +49,15 @@ SESSION_NAME = os.environ.get("SESSION_NAME", "LeoMediaSearchBot")
 default_start_massege = """
 **Hi {}👋
 
-I'm Leo Media Search Bot**
+I'm Leo Mod Apps Bot**
 
-You can start searching by the "Search Media 🔎" button below 😊
+You can start searching mod apps by the "Search Mod Apps 🔎" button below 😊
 """
 
 SHARE_BUTTON_TEXT = """
-Leo Media Search Bot 🇱🇰
+Leo Mod Apps Bot 🇱🇰
 
-Here you can find any media file by searching its name 😊
+Here you can find any mod app by searching its name 😊
 
 Bot : {username} 🤖
 Support Group : @leosupportx 🇱🇰
