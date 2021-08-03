@@ -41,7 +41,7 @@ async def start(bot, message):
                 InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
             ],
             [
-                InlineKeyboardButton('Search Media 🔎', switch_inline_query_current_chat=''),
+                InlineKeyboardButton('Search Mod Apps 🔎', switch_inline_query_current_chat=''),
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -92,7 +92,7 @@ async def total(bot, message):
     msg = await message.reply("Processing...⏳\nLeo Projects 🇱🇰", quote=True)
     try:
         total = await Media.count_documents()
-        await msg.edit(f'📁 Total files saved in Leo Media Search Bots Database: {total}')
+        await msg.edit(f'📁 Total files saved in Leo Mod Apps Bots Database: {total}')
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
