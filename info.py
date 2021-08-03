@@ -91,7 +91,7 @@ ABOUT_TEXT = """
 🔰 **Support Group :** [Leo Support 🇱🇰](https://telegram.me/leosupportx)
 🔰 **Language :** [Python3](https://python.org)
 🔰 **Library :** [Pyrogram](https://pyrogram.org)
-🔰 **Server :** [RailwayApp](https://railway.app)
+🔰 **Server :** [Heroku](https://heroku.com)
 """
 
 HOME_BUTTONS = InlineKeyboardMarkup(
