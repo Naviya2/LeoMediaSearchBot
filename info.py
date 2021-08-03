@@ -124,7 +124,7 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 ABOUT_BUTTONS = InlineKeyboardMarkup(
        [
             [
-                InlineKeyboardButton('Home 🏠', callback data='home'),
+                InlineKeyboardButton('Home 🏠', callback_data='home'),
                 InlineKeyboardButton('Help Menu 🆘', callback_data='help'),
             ],
             [
