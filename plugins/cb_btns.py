@@ -1,5 +1,5 @@
 import os
-from  info import START_MSG, HELP_TEXT, ABOUT_TEXT, HOME_BUTTONS, HELP_BUTTONS, ABOUT_BUTTONS, UPDATES_CHANNEL
+import info
 from pyrogram import Client
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -11,7 +11,7 @@ async def cb_data(bot, message):
         await message.message.edit_text(
             text=info.START_MSG.format(message.from_user.mention),
             reply_markup=info.HOME_BUTTONS,
-            disable_web_page_preview=True,
+            disable_web_page_preview=True
         )
     elif message.data == "help":
         await message.message.edit_text(
@@ -61,9 +61,9 @@ async def cb_data(bot, message):
                 )
                 return
         await message.message.edit(
-            text=Translation.START_MSG.format(message.from_user.mention),
+            text=info.START_MSG.format(message.from_user.mention),
             disable_web_page_preview=True,
-            reply_markup=Translation.HOME_BUTTONS,
+            reply_markup=info.HOME_BUTTONS,
         )
     else:
         await message.message.delete()
