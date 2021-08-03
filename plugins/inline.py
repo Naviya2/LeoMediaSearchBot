@@ -42,7 +42,7 @@ async def answer(bot, query):
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"Latest Updates 🔄👇"
+        switch_pm_text = f"Latest Updated Mod Apps 🔄👇"
         if string:
             switch_pm_text += f" for {string}"
 
@@ -53,7 +53,7 @@ async def answer(bot, query):
                            next_offset=str(next_offset))
     else:
 
-        switch_pm_text = f'No Media Found in Leo Media Search Bot🙁'
+        switch_pm_text = f'No Media Found in Leo Mod Apps Bot🙁'
         if string:
             switch_pm_text += f' for "{string}"'
 
