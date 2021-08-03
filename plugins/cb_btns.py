@@ -1,5 +1,5 @@
 import os
-from  info import START_MSG
+from  info import START_MSG, HELP_TEXT, ABOUT_TEXT, HOME_BUTTONS, HELP_BUTTONS, ABOUT_BUTTONS
 from pyrogram import Client
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -61,7 +61,7 @@ async def cb_data(bot, message):
                 )
                 return
         await message.message.edit(
-            text=Translation.START_TEXT.format(message.from_user.mention),
+            text=Translation.START_MSG.format(message.from_user.mention),
             disable_web_page_preview=True,
             reply_markup=Translation.HOME_BUTTONS,
         )
