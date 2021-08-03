@@ -68,3 +68,66 @@ Developper : @naviya2 🇱🇰
 START_MSG = environ.get('START_MSG', default_start_massege)
 
 INVITE_MSG = environ.get('INVITE_MSG', 'Please join @.... to use this bot')
+
+HELP_TEXT = """
+Hello {}👋
+
+<b>You should know following instructions get mod apps😊</b>
+
+🔰<code>At first, Please touch on the bellow "Search Mod Apps 🔎" button</code>
+
+🔰<code>Then type mod app which you want in the type bar</code>
+
+🔰<code>Then our bot will show all the result of your search</code>
+
+🔰<code>Then touch on the result mod app you want</code>
+"""
+ABOUT_TEXT = """
+    
+🔰 **Bot :** [Leo Mod Apps Bot 🇱🇰](https://t.me/leoinlinesearchbot)
+🔰 **Developer :** [Naviya 🇱🇰](https://telegram.me/naviya2)
+🔰 **Updates Channel :** [Leo Updates 🇱🇰](https://telegram.me/new_ehi)
+🔰 **Support Group :** [Leo Support 🇱🇰](https://telegram.me/leosupportx)
+🔰 **Language :** [Python3](https://python.org)
+🔰 **Library :** [Pyrogram](https://pyrogram.org)
+🔰 **Server :** [RailwayApp](https://railway.app)
+"""
+
+HOME_BUTTONS = InlineKeyboardMarkup(
+       [
+            [
+                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/new_ehi'),
+                InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
+            ],
+            [
+                InlineKeyboardButton('Help Menu 🆘', callback_data='home'),
+            ],
+            [
+                InlineKeyboardButton('Search Mod Apps 🔎', switch_inline_query_current_chat=''),
+            ],
+        ]
+    )
+
+HELP_BUTTONS = InlineKeyboardMarkup(
+       [
+            [
+                InlineKeyboardButton('About ❗️', callback_data='about'),
+                InlineKeyboardButton('Home 🏠', callback_data='home'),
+            ],
+            [
+                InlineKeyboardButton('Search Mod Apps 🔎', switch_inline_query_current_chat=''),
+            ],
+        ]
+    )         
+
+ABOUT_BUTTONS = InlineKeyboardMarkup(
+       [
+            [
+                InlineKeyboardButton('Home 🏠', url='https://t.me/new_ehi'),
+                InlineKeyboardButton('Help Menu 🆘', callback_data='home'),
+            ],
+            [
+                InlineKeyboardButton('Close ❎', callback_data='close'),
+            ],
+        ]
+    )
