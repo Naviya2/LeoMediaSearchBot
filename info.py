@@ -34,7 +34,7 @@ DATABASE_NAME = environ['DATABASE_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #for broadcast and force sub
-BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", ""))
+BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY"))
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
 
 #ban/unban
