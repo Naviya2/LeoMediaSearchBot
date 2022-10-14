@@ -1,6 +1,6 @@
 <h1 align="center"><b>Leo Media Search Bot 🇱🇰</b></h1>
 
-# Features 
+# Feature
 
 * Index channel or group files for inline search.
 * When you post file on telegram channel or group this bot will save that file in database, so you can search easily in inline mode.
